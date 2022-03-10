@@ -1,20 +1,39 @@
+/*--global website graphic parameters--*/
 body{
-    width: 1040px;
-	padding:20px;	
+    max-width: 1500px;
+	padding:20px;
+    margin: auto;
+    margin-left: 80px;
 }
+/*-------------------*/
 
-#conteneur{
+/*--section graphic parameters--*/
+section{
+    background-color: #F2F2F2;
+    width: fit-content;
+    border-radius: 20px;
+    margin-left: 0px;
+    padding: 10px 15px 10px 15px;
+    float: left;
+}
+/*-------------*/
+
+/*--container parameters to display contents--*/
+#container{
     display: flex;
 }
 
-.element{
+.content{
     position: relative;
     margin-left: auto;
     margin-right: 20px;
 }
+/*--------------------*/
 
+/*--list display parameters--*/
 ul{
     display: flex;
+    padding-left: 0px;
 }
 
 li{
@@ -22,3 +41,82 @@ li{
     margin-left: 30px;
     margin-top: 20px;
 }
+/*------------------*/
+
+/*--"Hébergements à Marseille" section's parameters--*/
+#hébergements{
+    width: fit-content;
+    max-width: 930px;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+}
+  
+.annonce-1{
+    width: 280px;
+    height: 200px;
+    background-image: url(../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 6px solid #FFFFFF;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin:  15px 15px 15px 15px;
+}
+.annonce-2{
+    width: 280px;
+    height: 200px;
+    background-image: url(../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 6px solid #FFFFFF;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin:  15px 15px 15px 15px;
+}
+.annonce-3{
+    width: 280px;
+    height: 200px;
+    background-image: url(../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 6px solid #FFFFFF;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin:  15px 15px 15px 15px;
+}
+.annonce-4{
+    width: 280px;
+    height: 200px;
+    background-image: url(../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 6px solid #FFFFFF;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin:  15px 15px 15px 15px;
+}
+.annonce-5{
+    width: 280px;
+    height: 200px;
+    background-image: url(../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 6px solid #FFFFFF;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin:  15px 15px 15px 15px;
+}
+.annonce-6{
+    width: 280px;
+    height: 200px;
+    background-image: url(../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 6px solid #FFFFFF;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin:  15px 15px 15px 15px;
+}
+/*------------------------------*/
