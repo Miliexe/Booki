@@ -1,6 +1,6 @@
 /*--global website graphic parameters--*/
 body{
-    max-width: 1500px;
+    max-width: 1450px;
 	padding:20px;
     margin: auto;
     margin-left: 80px;
@@ -12,9 +12,14 @@ section{
     background-color: #F2F2F2;
     width: fit-content;
     border-radius: 20px;
-    margin-left: 0px;
-    padding: 10px 15px 10px 15px;
+    margin: 15px 30px 15px 0px;
+    padding: 10px 10px 10px 30px;
     float: left;
+}
+
+div section{
+    background-color: #FFFFFF;
+    padding: 0px;
 }
 /*-------------*/
 
@@ -26,7 +31,7 @@ section{
 .content{
     position: relative;
     margin-left: auto;
-    margin-right: 20px;
+    margin-right: 100px;
 }
 /*--------------------*/
 
@@ -61,7 +66,7 @@ li{
     border: 6px solid #FFFFFF;
     border-radius: 20px;
     box-sizing: border-box;
-    margin:  15px 15px 15px 15px;
+    margin:  15px 30px 15px 0px;
 }
 .annonce-2{
     width: 280px;
@@ -72,7 +77,7 @@ li{
     border: 6px solid #FFFFFF;
     border-radius: 20px;
     box-sizing: border-box;
-    margin:  15px 15px 15px 15px;
+    margin:  15px 30px 15px 0px;
 }
 .annonce-3{
     width: 280px;
@@ -83,7 +88,7 @@ li{
     border: 6px solid #FFFFFF;
     border-radius: 20px;
     box-sizing: border-box;
-    margin:  15px 15px 15px 15px;
+    margin:  15px 30px 15px 0px;
 }
 .annonce-4{
     width: 280px;
@@ -94,7 +99,7 @@ li{
     border: 6px solid #FFFFFF;
     border-radius: 20px;
     box-sizing: border-box;
-    margin:  15px 15px 15px 15px;
+    margin:  15px 30px 15px 0px;
 }
 .annonce-5{
     width: 280px;
@@ -106,7 +111,7 @@ li{
     border: 6px solid #FFFFFF;
     border-radius: 20px;
     box-sizing: border-box;
-    margin:  15px 15px 15px 15px;
+    margin:  15px 30px 15px 0px;
 }
 .annonce-6{
     width: 280px;
@@ -117,6 +122,129 @@ li{
     border: 6px solid #FFFFFF;
     border-radius: 20px;
     box-sizing: border-box;
-    margin:  15px 15px 15px 15px;
+    margin:  15px 30px 15px 0px;
+}
+/*------------------------------*/
+
+/*--"Les plus populaires" section's parameters--*/
+#populaires{
+    width: fit-content;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+  
+.top-1{
+    width: 320px;
+    height: 143px;
+    background-image: url(../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: -60%;
+    background-size: 70%;
+    border: 6px solid #FFFFFF;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin:  15px 30px 15px 0px;
+}
+.top-2{
+    width: 320px;
+    height: 143px;
+    background-image: url(../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: -60%;
+    background-size: 70%;
+    border: 6px solid #FFFFFF;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin:  15px 30px 15px 0px;
+}
+.top-3{
+    width: 320px;
+    height: 143px;
+    background-image: url(../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: -60%;
+    background-size: 70%;
+    border: 6px solid #FFFFFF;
+    border-radius: 40px;
+    box-sizing: border-box;
+    margin:  15px 30px 15px 0px;
+}
+/*------------------------------*/
+
+/*--"Activités à Marseille" section's parameters--*/
+#activités{
+    width: fit-content;
+    max-width: 1390px;
+    max-height: 520px;
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.activity-1{
+    width: 325px;
+    height: 460px;
+    background-image: url(../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 6px solid #FFFFFF;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.activity-2{
+    width: 325px;
+    height: 247px;
+    background-image: url(../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 6px solid #FFFFFF;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.activity-3{
+    width: 325px;
+    height: 183px;
+    background-image: url(../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 6px solid #FFFFFF;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.activity-4{
+    width: 325px;
+    height: 460px;
+    background-image: url(../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 6px solid #FFFFFF;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.activity-5{
+    width: 325px;
+    height: 200px;
+    background-image: url(../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 6px solid #FFFFFF;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.activity-6{
+    width: 325px;
+    height: 230px;
+    background-image: url(../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 6px solid #FFFFFF;
+    border-radius: 20px;
+    box-sizing: border-box;
 }
 /*------------------------------*/
