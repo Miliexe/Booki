@@ -1,11 +1,13 @@
-/*--global website graphic parameters--*/
 body{
+    max-width: 1520px;
+}
+
+main{
     max-width: 1450px;
 	padding:20px;
     margin: auto;
-    margin-left: 80px;
+    margin-left: 50px;
 }
-/*-------------------*/
 
 /*--section graphic parameters--*/
 section{
@@ -22,6 +24,25 @@ div section{
     padding: 0px;
 }
 /*-------------*/
+
+/*--footer graphic parameters--*/
+.footer {
+    background-color: #F2F2F2;
+    height: 200px;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    display: flex;
+}
+
+.footer div{
+    margin: 30px 30px 30px 80px;
+    width: 33%;
+}
+.footer a:link{ 
+ text-decoration:none;
+ color: #000;
+} 
+/*---------------------------*/
 
 /*--container parameters to display contents--*/
 #container{
@@ -182,7 +203,7 @@ li{
     flex-direction: column; 
     flex-wrap: wrap;
     gap: 42px;
-    /*justify-content: space-around;*/
+    margin-bottom: 60px;
 }
 
 .activity-1{
