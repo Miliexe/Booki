@@ -177,74 +177,73 @@ li{
 /*--"Activités à Marseille" section's parameters--*/
 #activités{
     width: fit-content;
-    max-width: 1390px;
     max-height: 520px;
     display: flex;
     flex-direction: column; 
     flex-wrap: wrap;
-    gap: 30px;
-    justify-content: space-around;
+    gap: 42px;
+    /*justify-content: space-around;*/
 }
 
 .activity-1{
-    width: 325px;
-    height: 460px;
+    width: 315px;
+    height: 472px;
     background-image: url(../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
     background-size: cover;
     background-position: center;
-    border: 6px solid #FFFFFF;
     border-radius: 20px;
     box-sizing: border-box;
 }
 .activity-2{
-    width: 325px;
+    width: 315px;
     height: 247px;
     background-image: url(../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
     background-size: cover;
     background-position: center;
-    border: 6px solid #FFFFFF;
     border-radius: 20px;
     box-sizing: border-box;
 }
 .activity-3{
-    width: 325px;
+    width: 315px;
     height: 183px;
     background-image: url(../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
     background-size: cover;
     background-position: center;
-    border: 6px solid #FFFFFF;
     border-radius: 20px;
     box-sizing: border-box;
 }
 .activity-4{
-    width: 325px;
-    height: 460px;
+    width: 315px;
+    height: 472px;
     background-image: url(../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
     background-size: cover;
     background-position: center;
-    border: 6px solid #FFFFFF;
     border-radius: 20px;
     box-sizing: border-box;
 }
 .activity-5{
-    width: 325px;
+    width: 315px;
     height: 200px;
     background-image: url(../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg) ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border: 6px solid #FFFFFF;
     border-radius: 20px;
     box-sizing: border-box;
 }
 .activity-6{
-    width: 325px;
+    width: 315px;
     height: 230px;
     background-image: url(../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
     background-size: cover;
     background-position: center;
-    border: 6px solid #FFFFFF;
     border-radius: 20px;
     box-sizing: border-box;
 }
+@media (max-width: 1550px) {
+    #activités{
+      flex-direction: row;
+    }
+  }
 /*------------------------------*/
+
