@@ -1,0 +1,249 @@
+/*--global website graphic parameters--*/
+body{
+    max-width: 1450px;
+	padding:20px;
+    margin: auto;
+    margin-left: 80px;
+}
+/*-------------------*/
+
+/*--section graphic parameters--*/
+section{
+    background-color: #F2F2F2;
+    width: fit-content;
+    border-radius: 20px;
+    margin: 15px 30px 15px 0px;
+    padding: 10px 10px 10px 30px;
+    float: left;
+}
+
+div section{
+    background-color: #FFFFFF;
+    padding: 0px;
+}
+/*-------------*/
+
+/*--container parameters to display contents--*/
+#container{
+    display: flex;
+}
+
+.content{
+    position: relative;
+    margin-left: auto;
+    margin-right: 100px;
+}
+/*--------------------*/
+
+/*--list display parameters--*/
+ul{
+    display: flex;
+    padding-left: 0px;
+}
+
+li{
+    display: inline;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+/*------------------*/
+
+/*--"Hébergements à Marseille" section's parameters--*/
+#hébergements{
+    width: fit-content;
+    max-width: 930px;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+}
+  
+.annonce-1{
+    width: 280px;
+    height: 200px;
+    background-image: url(../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 6px solid #FFFFFF;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin:  15px 30px 15px 0px;
+}
+.annonce-2{
+    width: 280px;
+    height: 200px;
+    background-image: url(../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 6px solid #FFFFFF;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin:  15px 30px 15px 0px;
+}
+.annonce-3{
+    width: 280px;
+    height: 200px;
+    background-image: url(../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 6px solid #FFFFFF;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin:  15px 30px 15px 0px;
+}
+.annonce-4{
+    width: 280px;
+    height: 200px;
+    background-image: url(../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 6px solid #FFFFFF;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin:  15px 30px 15px 0px;
+}
+.annonce-5{
+    width: 280px;
+    height: 200px;
+    background-image: url(../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 6px solid #FFFFFF;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin:  15px 30px 15px 0px;
+}
+.annonce-6{
+    width: 280px;
+    height: 200px;
+    background-image: url(../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 6px solid #FFFFFF;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin:  15px 30px 15px 0px;
+}
+/*------------------------------*/
+
+/*--"Les plus populaires" section's parameters--*/
+#populaires{
+    width: fit-content;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+  
+.top-1{
+    width: 320px;
+    height: 143px;
+    background-image: url(../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: -60%;
+    background-size: 70%;
+    border: 6px solid #FFFFFF;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin:  15px 30px 15px 0px;
+}
+.top-2{
+    width: 320px;
+    height: 143px;
+    background-image: url(../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: -60%;
+    background-size: 70%;
+    border: 6px solid #FFFFFF;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin:  15px 30px 15px 0px;
+}
+.top-3{
+    width: 320px;
+    height: 143px;
+    background-image: url(../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: -60%;
+    background-size: 70%;
+    border: 6px solid #FFFFFF;
+    border-radius: 40px;
+    box-sizing: border-box;
+    margin:  15px 30px 15px 0px;
+}
+/*------------------------------*/
+
+/*--"Activités à Marseille" section's parameters--*/
+#activités{
+    width: fit-content;
+    max-height: 520px;
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    gap: 42px;
+    /*justify-content: space-around;*/
+}
+
+.activity-1{
+    width: 315px;
+    height: 472px;
+    background-image: url(../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.activity-2{
+    width: 315px;
+    height: 247px;
+    background-image: url(../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.activity-3{
+    width: 315px;
+    height: 183px;
+    background-image: url(../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.activity-4{
+    width: 315px;
+    height: 472px;
+    background-image: url(../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.activity-5{
+    width: 315px;
+    height: 200px;
+    background-image: url(../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.activity-6{
+    width: 315px;
+    height: 230px;
+    background-image: url(../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+@media (max-width: 1550px) {
+    #activités{
+      flex-direction: row;
+    }
+  }
+/*------------------------------*/
+
