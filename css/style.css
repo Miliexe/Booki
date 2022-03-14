@@ -72,7 +72,7 @@ li{
 /*------------------*/
 
 /*--"Hébergements à Marseille" section's parameters--*/
-#hébergements{
+#hebergements{
     width: fit-content;
     max-width: 930px;
     display: flex;
@@ -207,7 +207,7 @@ li{
 /*------------------------------*/
 
 /*--"Activités à Marseille" section's parameters--*/
-#activités{
+#activites{
     width: 1350px;
     max-height: 520px;
     display: flex;
