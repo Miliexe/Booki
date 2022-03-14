@@ -1,12 +1,12 @@
 body{
-    max-width: 1520px;
+    max-width: 1510px;
 }
 
 main{
-    max-width: 1450px;
+    max-width: 1460px;
 	padding:20px;
     margin: auto;
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 /*--section graphic parameters--*/
@@ -21,7 +21,9 @@ section{
 
 div section{
     background-color: #FFFFFF;
+    width: fit-content;
     padding: 0px;
+    float: left;
 }
 /*-------------*/
 
@@ -70,7 +72,7 @@ li{
 /*------------------*/
 
 /*--"Hébergements à Marseille" section's parameters--*/
-#hébergements{
+#hebergements{
     width: fit-content;
     max-width: 930px;
     display: flex;
@@ -78,7 +80,7 @@ li{
     flex-wrap: wrap;
 }
   
-.annonce-1{
+.heb-1{
     width: 280px;
     height: 200px;
     background-image: url(../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
@@ -88,8 +90,9 @@ li{
     border-radius: 20px;
     box-sizing: border-box;
     margin:  15px 30px 15px 0px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
-.annonce-2{
+.heb-2{
     width: 280px;
     height: 200px;
     background-image: url(../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
@@ -99,8 +102,9 @@ li{
     border-radius: 20px;
     box-sizing: border-box;
     margin:  15px 30px 15px 0px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
-.annonce-3{
+.heb-3{
     width: 280px;
     height: 200px;
     background-image: url(../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
@@ -110,8 +114,9 @@ li{
     border-radius: 20px;
     box-sizing: border-box;
     margin:  15px 30px 15px 0px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
-.annonce-4{
+.heb-4{
     width: 280px;
     height: 200px;
     background-image: url(../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
@@ -121,8 +126,9 @@ li{
     border-radius: 20px;
     box-sizing: border-box;
     margin:  15px 30px 15px 0px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
-.annonce-5{
+.heb-5{
     width: 280px;
     height: 200px;
     background-image: url(../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg) ;
@@ -133,8 +139,9 @@ li{
     border-radius: 20px;
     box-sizing: border-box;
     margin:  15px 30px 15px 0px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
-.annonce-6{
+.heb-6{
     width: 280px;
     height: 200px;
     background-image: url(../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
@@ -144,6 +151,7 @@ li{
     border-radius: 20px;
     box-sizing: border-box;
     margin:  15px 30px 15px 0px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 /*------------------------------*/
 
@@ -157,7 +165,7 @@ li{
     padding-bottom: 10px;
 }
   
-.top-1{
+.pop-1{
     width: 320px;
     height: 143px;
     background-image: url(../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
@@ -168,8 +176,9 @@ li{
     border-radius: 20px;
     box-sizing: border-box;
     margin:  15px 30px 15px 0px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
-.top-2{
+.pop-2{
     width: 320px;
     height: 143px;
     background-image: url(../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
@@ -180,8 +189,9 @@ li{
     border-radius: 20px;
     box-sizing: border-box;
     margin:  15px 30px 15px 0px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
-.top-3{
+.pop-3{
     width: 320px;
     height: 143px;
     background-image: url(../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
@@ -189,15 +199,16 @@ li{
     background-position: -60%;
     background-size: 70%;
     border: 6px solid #FFFFFF;
-    border-radius: 40px;
+    border-radius: 20px;
     box-sizing: border-box;
     margin:  15px 30px 15px 0px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 /*------------------------------*/
 
 /*--"Activités à Marseille" section's parameters--*/
-#activités{
-    width: fit-content;
+#activites{
+    width: 1350px;
     max-height: 520px;
     display: flex;
     flex-direction: column; 
@@ -206,7 +217,7 @@ li{
     margin-bottom: 60px;
 }
 
-.activity-1{
+.act-1{
     width: 315px;
     height: 472px;
     background-image: url(../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
@@ -214,8 +225,9 @@ li{
     background-position: center;
     border-radius: 20px;
     box-sizing: border-box;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
-.activity-2{
+.act-2{
     width: 315px;
     height: 247px;
     background-image: url(../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
@@ -223,8 +235,9 @@ li{
     background-position: center;
     border-radius: 20px;
     box-sizing: border-box;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
-.activity-3{
+.act-3{
     width: 315px;
     height: 183px;
     background-image: url(../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
@@ -232,8 +245,9 @@ li{
     background-position: center;
     border-radius: 20px;
     box-sizing: border-box;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
-.activity-4{
+.act-4{
     width: 315px;
     height: 472px;
     background-image: url(../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
@@ -241,8 +255,9 @@ li{
     background-position: center;
     border-radius: 20px;
     box-sizing: border-box;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
-.activity-5{
+.act-5{
     width: 315px;
     height: 200px;
     background-image: url(../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg) ;
@@ -251,8 +266,9 @@ li{
     background-repeat: no-repeat;
     border-radius: 20px;
     box-sizing: border-box;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
-.activity-6{
+.act-6{
     width: 315px;
     height: 230px;
     background-image: url(../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
@@ -260,6 +276,7 @@ li{
     background-position: center;
     border-radius: 20px;
     box-sizing: border-box;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 1550px) {
     #activités{
@@ -268,3 +285,31 @@ li{
   }
 /*------------------------------*/
 
+.heb-desc{
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 40%;
+    margin-top: 41.5%;
+    margin-left: -4px;
+    border-radius: 0px 0px 20px 20px;
+    padding: 10px 0px 0px 10px;
+}
+
+.pop-desc{
+    background-color: #FFFFFF;
+    width: 55%;
+    height: 100%;
+    margin-left: 42.5%;
+    margin-top: -4px;
+    border-radius: 0px 20px 20px 0px;
+    padding: 10px 0px 0px 10px;
+}
+
+.act-desc{
+    background-color: #FFFFFF;
+    width: 305px;
+    height: 50px;
+    margin-top: -60px;
+    border-radius: 0px 0px 20px 20px;
+    padding: 10px 0px 0px 10px;
+}
