@@ -1,5 +1,6 @@
 body{
     max-width: 1510px;
+    margin: auto;
 }
 
 main{
@@ -27,6 +28,11 @@ div section{
 }
 /*-------------*/
 
+a{
+    text-decoration:none;
+    color: black;
+}
+
 /*--footer graphic parameters--*/
 .footer {
     background-color: #F2F2F2;
@@ -40,10 +46,6 @@ div section{
     margin: 30px 30px 30px 80px;
     width: 33%;
 }
-.footer a:link{ 
- text-decoration:none;
- color: #000;
-} 
 /*---------------------------*/
 
 /*--container parameters to display contents--*/
@@ -78,80 +80,28 @@ li{
     display: flex;
     flex-direction: row; 
     flex-wrap: wrap;
+    gap: 30px;
 }
   
-.heb-1{
+.heb{
     width: 280px;
     height: 200px;
-    background-image: url(../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    border: 6px solid #FFFFFF;
-    border-radius: 20px;
-    box-sizing: border-box;
-    margin:  15px 30px 15px 0px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-.heb-2{
-    width: 280px;
-    height: 200px;
-    background-image: url(../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    border: 6px solid #FFFFFF;
-    border-radius: 20px;
-    box-sizing: border-box;
-    margin:  15px 30px 15px 0px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-.heb-3{
-    width: 280px;
-    height: 200px;
-    background-image: url(../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    border: 6px solid #FFFFFF;
-    border-radius: 20px;
-    box-sizing: border-box;
-    margin:  15px 30px 15px 0px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-.heb-4{
-    width: 280px;
-    height: 200px;
-    background-image: url(../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    border: 6px solid #FFFFFF;
-    border-radius: 20px;
-    box-sizing: border-box;
-    margin:  15px 30px 15px 0px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-.heb-5{
-    width: 280px;
-    height: 200px;
-    background-image: url(../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg) ;
-    background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
+    margin-bottom: 20px;
+    background-size: cover;
     border: 6px solid #FFFFFF;
     border-radius: 20px;
     box-sizing: border-box;
-    margin:  15px 30px 15px 0px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
-.heb-6{
-    width: 280px;
-    height: 200px;
-    background-image: url(../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    border: 6px solid #FFFFFF;
-    border-radius: 20px;
-    box-sizing: border-box;
-    margin:  15px 30px 15px 0px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+
+.heb-desc{
+    background-color: #FFFFFF;
+    width: 265px;
+    height: 70px;
+    margin-top: -100px;
+    border-radius: 0px 0px 20px 20px;
+    padding: 10px 0px 0px 15px;
 }
 /*------------------------------*/
 
@@ -162,47 +112,30 @@ li{
     display: flex;
     flex-direction: column; 
     flex-wrap: wrap;
-    padding-bottom: 10px;
 }
   
-.pop-1{
+.pop{
     width: 320px;
     height: 143px;
-    background-image: url(../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
     background-repeat: no-repeat;
     background-position: -60%;
     background-size: 70%;
     border: 6px solid #FFFFFF;
     border-radius: 20px;
     box-sizing: border-box;
-    margin:  15px 30px 15px 0px;
+    margin:  0px 30px 15px 0px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
-.pop-2{
-    width: 320px;
-    height: 143px;
-    background-image: url(../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-position: -60%;
-    background-size: 70%;
-    border: 6px solid #FFFFFF;
-    border-radius: 20px;
-    box-sizing: border-box;
-    margin:  15px 30px 15px 0px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-.pop-3{
-    width: 320px;
-    height: 143px;
-    background-image: url(../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-position: -60%;
-    background-size: 70%;
-    border: 6px solid #FFFFFF;
-    border-radius: 20px;
-    box-sizing: border-box;
-    margin:  15px 30px 15px 0px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+
+.pop-desc{
+    background-color: #FFFFFF;
+    width: 170px;
+    height: 130px;
+    margin-left: 130px;
+    margin-top: -155px;
+    margin-bottom: 28.5px;
+    border-radius: 0px 20px 20px 0px;
+    padding: 10px 0px 0px 15px;
 }
 /*------------------------------*/
 
@@ -217,99 +150,26 @@ li{
     margin-bottom: 60px;
 }
 
-.act-1{
-    width: 315px;
-    height: 472px;
-    background-image: url(../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    box-sizing: border-box;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-.act-2{
-    width: 315px;
-    height: 247px;
-    background-image: url(../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    box-sizing: border-box;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-.act-3{
-    width: 315px;
-    height: 183px;
-    background-image: url(../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    box-sizing: border-box;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-.act-4{
-    width: 315px;
-    height: 472px;
-    background-image: url(../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    box-sizing: border-box;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-.act-5{
-    width: 315px;
-    height: 200px;
-    background-image: url(../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg) ;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    box-sizing: border-box;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-.act-6{
-    width: 315px;
-    height: 230px;
-    background-image: url(../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    box-sizing: border-box;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-@media (max-width: 1550px) {
-    #activités{
-      flex-direction: row;
+@media (max-width: 1500px) {
+    #activites{          
+        max-height: none;
     }
-  }
-/*------------------------------*/
-
-.heb-desc{
-    background-color: #FFFFFF;
-    width: 100%;
-    height: 40%;
-    margin-top: 41.5%;
-    margin-left: -4px;
-    border-radius: 0px 0px 20px 20px;
-    padding: 10px 0px 0px 10px;
 }
 
-.pop-desc{
-    background-color: #FFFFFF;
-    width: 55%;
-    height: 100%;
-    margin-left: 42.5%;
-    margin-top: -4px;
-    border-radius: 0px 20px 20px 0px;
-    padding: 10px 0px 0px 10px;
+.act{
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .act-desc{
     background-color: #FFFFFF;
-    width: 305px;
+    width: 300px;
     height: 50px;
     margin-top: -60px;
     border-radius: 0px 0px 20px 20px;
-    padding: 10px 0px 0px 10px;
+    padding: 10px 0px 0px 15px;
 }
+/*------------------------------*/
