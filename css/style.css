@@ -1,6 +1,45 @@
+@font-face {
+    font-family: 'Raleway-Medium';
+    src: url(../fonts/Raleway-Medium.ttf);
+    font-size: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Raleway-Bold';
+    src: url(../fonts/Raleway-Bold.ttf);
+    font-size: normal;
+    font-weight: normal;
+}
+
+h1{
+    font-family: 'Raleway-Bold';
+    font-size: 24px
+}
+
+h2{
+    font-family: 'Raleway-Bold';
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+h3{
+    font-family: 'Raleway-Bold';
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 18px;
+}
+
+p{
+    margin-top: -15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
 body{
     max-width: 1510px;
     margin: auto;
+    font-family: 'Raleway-Medium';
 }
 
 main{
@@ -22,9 +61,7 @@ section{
 
 div section{
     background-color: #FFFFFF;
-    width: fit-content;
     padding: 0px;
-    float: left;
 }
 /*-------------*/
 
@@ -101,7 +138,7 @@ li{
     height: 70px;
     margin-top: -100px;
     border-radius: 0px 0px 20px 20px;
-    padding: 10px 0px 0px 15px;
+    padding: 5px 0px 5px 15px;
 }
 /*------------------------------*/
 
@@ -135,7 +172,7 @@ li{
     margin-top: -155px;
     margin-bottom: 28.5px;
     border-radius: 0px 20px 20px 0px;
-    padding: 10px 0px 0px 15px;
+    padding: 5px 0px 5px 15px;
 }
 /*------------------------------*/
 
@@ -170,6 +207,6 @@ li{
     height: 50px;
     margin-top: -60px;
     border-radius: 0px 0px 20px 20px;
-    padding: 10px 0px 0px 15px;
+    padding: 5px 0px 5px 15px;
 }
 /*------------------------------*/
