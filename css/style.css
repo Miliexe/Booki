@@ -36,6 +36,11 @@ p{
     font-size: 14px;
 }
 
+a{
+    text-decoration:none;
+    color: black;
+}
+
 body{
     max-width: 1510px;
     margin: auto;
@@ -107,11 +112,6 @@ div section{
     padding: 0px;
 }
 /*-------------*/
-
-a{
-    text-decoration:none;
-    color: black;
-}
 
 /*--footer graphic parameters--*/
 .footer {
