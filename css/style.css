@@ -14,7 +14,8 @@
 
 h1{
     font-family: 'Raleway-Bold';
-    font-size: 24px
+    font-size: 24px;
+    margin-bottom: 25px;
 }
 
 h2{
@@ -156,7 +157,9 @@ li{
     margin-left: 30px;
     margin-top: 20px;
 }
+/*------------------*/
 
+/*--nav parameters--*/
 nav li{
     margin: auto;
     text-align: center;
@@ -173,6 +176,27 @@ nav li{
     color: #0065FC;
 }
 /*------------------*/
+
+/*--Filtres parameters--*/
+h2 a{
+    width: fit-content;
+    padding: 12px 20px 12px 60px;
+    border: 2px solid #F2F2F2;
+    border-radius: 45px;
+}
+
+.filtre-icon{
+    width: 25px;
+    height: 21px;
+    padding: 15px 13px 15px 13px;
+    background-color: #DEEBFF;
+    font-size: 20px;
+    color: #0065FC;
+    border-radius: 45px;
+    margin-right: -51px;
+    text-align: center;
+}
+/*--------------------*/
 
 /*--"Hébergements à Marseille" section's parameters--*/
 #hebergements{
