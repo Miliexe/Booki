@@ -166,13 +166,10 @@ nav li{
     padding: 30px 30px 30px 30px;
 }
 
-.active{
+nav a:hover{
     border-top: 4px solid #0065FC;
-    margin-top: -2px;
-    padding-top: 28px;
-}
-
-.a-active{
+    margin: -2px -30px -30px -30px;
+    padding: 28px 30px 30px 30px;
     color: #0065FC;
 }
 /*------------------*/
