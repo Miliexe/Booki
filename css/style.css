@@ -32,8 +32,8 @@ h1{
 }
 
 p{
-    margin-top: -15px;
-    margin-bottom: 20px;
+    margin-top: -13px;
+    margin-bottom: 18px;
     font-size: 14px;
 }
 
@@ -74,6 +74,11 @@ input[type=search]{
     color: #000;
     font-family: 'Raleway-Bold';
     font-size: 16px;
+}
+
+form i{
+    margin: 0px 13px 0px 18px;
+    font-size: 18px;
 }
 
 ::placeholder{
@@ -118,28 +123,8 @@ div section{
 }
 /*-------------*/
 
-/*--footer graphic parameters--*/
-.footer {
-    background-color: #F2F2F2;
-    height: 200px;
-    width: 100%;
-    margin: 0px 0px 0px 0px;
-    display: flex;
-}
-
-.footer div{
-    margin: 40px 30px 30px 80px;
-    width: 33%;
-}
-
-footer p{
-    margin-top: auto;
-    margin-bottom: 12px;
-}
-/*---------------------------*/
-
 /*--container parameters to display contents--*/
-#container{
+.container{
     display: flex;
 }
 
@@ -186,39 +171,22 @@ nav a:hover{
     border: 2px solid #F2F2F2;
     border-radius: 45px;
 }
-
-.filtre-icon{
-    position: absolute;
-    width: 21px;
-    height: 18px;
-    padding: 15px 13px 15px 13px;
-    background-color: #DEEBFF;
-    font-size: 18px;
-    color: #0065FC;
-    border-radius: 45px;
-    margin-right: -51px;
-    margin-top: -13px;
-    text-align: center;
-    z-index: 1;
-}
 /*--------------------*/
 
 /*--"Hébergements à Marseille" section's parameters--*/
 #hebergements{
     width: fit-content;
-    max-width: 930px;
+    max-width: 920px;
     display: flex;
     flex-direction: row; 
     flex-wrap: wrap;
     gap: 30px;
+    padding-bottom: -30px;
 }
   
 .heb{
     width: 280px;
     height: 200px;
-    background-repeat: no-repeat;
-    margin-bottom: 20px;
-    background-size: cover;
     border: 6px solid #FFFFFF;
     border-radius: 20px;
     box-sizing: border-box;
@@ -229,27 +197,35 @@ nav a:hover{
     background-color: #FFFFFF;
     width: 265px;
     height: 70px;
-    margin-top: -100px;
+    margin-top: -80px;
     border-radius: 0px 0px 20px 20px;
     padding: 5px 0px 5px 15px;
+    position: absolute;
+    z-index: 0;
+}
+
+.heb img{
+    object-fit: cover;
+    width: 100%;
+    height: 62%;
+    border-radius: 15px 15px 0px 0px;
 }
 /*------------------------------*/
 
 /*--"Les plus populaires" section's parameters--*/
 #populaires{
     width: fit-content;
-    max-width: 400px;
+    max-width: 355px;
     display: flex;
     flex-direction: column; 
     flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 4px;
 }
   
 .pop{
-    width: 320px;
+    width: 335px;
     height: 143px;
-    background-repeat: no-repeat;
-    background-position: -60%;
-    background-size: 70%;
     border: 6px solid #FFFFFF;
     border-radius: 20px;
     box-sizing: border-box;
@@ -259,13 +235,22 @@ nav a:hover{
 
 .pop-desc{
     background-color: #FFFFFF;
-    width: 170px;
+    width: 180px;
     height: 130px;
-    margin-left: 130px;
+    margin-left: 135px;
     margin-top: -155px;
-    margin-bottom: 26.5px;
     border-radius: 0px 20px 20px 0px;
     padding: 5px 0px 5px 15px;
+    position: absolute;
+    z-index: 0;
+}
+
+.pop img{
+    object-fit: cover;
+    width: 50%;
+    height: 100%;
+    
+    border-radius: 15px;
 }
 /*------------------------------*/
 
@@ -301,5 +286,99 @@ nav a:hover{
     margin-top: -60px;
     border-radius: 0px 0px 20px 20px;
     padding: 5px 0px 5px 15px;
+    position: absolute;
+    z-index: 0;
+}
+
+.act-desc h2{
+    margin-top: 18px;
+}
+
+.act img{
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.t1{
+    width: 315px;
+    height: 468px;
+}
+.t2{
+    width: 315px;
+    height: 243px;
+}
+.t3{
+    width: 315px;
+    height: 226px;
+}
+.t4{ 
+    width: 315px;
+    height: 196px;
+}
+.t5{
+    width: 315px;
+    height: 179px;
 }
 /*------------------------------*/
+
+/*--icons--*/
+.filtre-icon{
+    position: absolute;
+    width: 21px;
+    height: 18px;
+    padding: 15px 13px 15px 13px;
+    background-color: #DEEBFF;
+    font-size: 18px;
+    color: #0065FC;
+    border-radius: 45px;
+    margin-right: -51px;
+    margin-top: -13px;
+    text-align: center;
+}
+
+.circle-info{
+    padding: 4px 8px 4px 8px;
+    color: #0065FC;
+    font-size: 12px; background-color: #FFFFFF;
+    border: 1px solid #F2F2F2;
+    border-radius: 100%;
+}
+
+.blue{
+    color: #0065FC;
+    font-size: 12px;
+}
+
+.grey{
+    color: #F2F2F2;
+    font-size: 12px;
+}
+
+.chart{
+    font-size: 25px;
+    position: relative;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+/*------------------*/
+
+/*--footer graphic parameters--*/
+.footer {
+    background-color: #F2F2F2;
+    height: 200px;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    display: flex;
+}
+
+.footer div{
+    margin: 40px 30px 30px 80px;
+    width: 33%;
+}
+
+footer p{
+    margin-top: auto;
+    margin-bottom: 12px;
+}
+/*---------------------------*/
