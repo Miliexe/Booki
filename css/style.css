@@ -110,6 +110,30 @@ form button{
     color: #FFFFFF;
     cursor: pointer;
 }
+
+@media (max-width: 768px){
+    form button{
+        position: absolute;
+        width: 45px;
+        border-radius: 12px;
+    }
+}
+
+@media (max-width: 768px){
+    .search {
+        text-indent: -9999px;
+        line-height: 0;
+    }
+    .search::after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f002";
+        text-indent: 0;
+        display: block;
+        line-height: initial;
+      }
+}
+
+
 /*-----------------*/
 
 /*--section graphic parameters--*/
