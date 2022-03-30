@@ -166,9 +166,22 @@ section{
 }
 
 @media (max-width: 768px) {
+
+    #phone-sec{
+        width: 99.6%;
+        max-width: 768px;
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap;
+        gap: 30px;
+        padding-bottom: -30px;
+        justify-content: center;
+    }
+
     section{
-        width: 100%;
-        margin: 0px;
+        margin: auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
     .sec1{
@@ -181,6 +194,13 @@ section{
 
     .sec3{
         padding-left: 30px;
+    }
+
+    #pop-phone{
+        display: flex;
+        width: 100.4%;
+        background-color: #F2F2F2;
+        justify-content: center;
     }
 }
 /*-------------*/
@@ -339,7 +359,7 @@ nav a:hover{
     #reversable{
         display: flex;
         flex-direction: column-reverse;
-        width: fit-content;
+        width: 100%;
     }
 }
 
@@ -493,7 +513,6 @@ nav a:hover{
 @media (max-width: 768px){
     #hebergements{
         flex-direction: column;
-
     }
     .heb{
         width: 335px;
