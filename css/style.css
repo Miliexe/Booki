@@ -146,7 +146,6 @@ form button{
 
 /*--section graphic parameters--*/
 section{
-    background-color: #F2F2F2;
     width: fit-content;
     border-radius: 20px;
     margin: 15px 30px 15px 0px;
@@ -154,11 +153,41 @@ section{
     float: left;
 }
 
-div section{
-    background-color: #FFFFFF;
-    padding: 0px;
+.sec1{
+    background-color: #F2F2F2;
+}
+
+.sec2{
+    background-color: #F2F2F2;
+}
+
+.sec3{
+    padding-left: 0px;
+}
+
+@media (max-width: 768px) {
+    section{
+        width: 100%;
+        margin: 0px;
+    }
+
+    .sec1{
+        background-color: #FFFFFF;
+    }
+
+    .sec2{
+        border-radius: 0;
+    }
+
+    .sec3{
+        padding-left: 30px;
+    }
 }
 /*-------------*/
+
+article{
+    width: fit-content;
+}
 
 /*--Header parameters--*/
 #header{
@@ -306,6 +335,14 @@ nav a:hover{
 }
 /*--------------------*/
 
+@media (max-width: 768px){
+    #reversable{
+        display: flex;
+        flex-direction: column-reverse;
+        width: fit-content;
+    }
+}
+
 /*--"Hébergements à Marseille" section's parameters--*/
 #hebergements{
     width: fit-content;
@@ -323,7 +360,7 @@ nav a:hover{
     border: 6px solid #FFFFFF;
     border-radius: 20px;
     box-sizing: border-box;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 .heb-desc{
@@ -363,7 +400,7 @@ nav a:hover{
     border-radius: 20px;
     box-sizing: border-box;
     margin:  0px 30px 15px 0px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 .pop-desc{
@@ -382,7 +419,6 @@ nav a:hover{
     object-fit: cover;
     width: 50%;
     height: 100%;
-    
     border-radius: 15px;
 }
 /*------------------------------*/
@@ -409,7 +445,7 @@ nav a:hover{
     background-position: center;
     border-radius: 20px;
     box-sizing: border-box;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 .act-desc{
@@ -454,6 +490,50 @@ nav a:hover{
 }
 /*------------------------------*/
 
+@media (max-width: 768px){
+    #hebergements{
+        flex-direction: column;
+
+    }
+    .heb{
+        width: 335px;
+        height: 200px;
+        border: 6px solid #FFFFFF;
+        border-radius: 20px;
+        box-sizing: border-box;
+    }
+
+    .heb-desc{
+        width: 320px;
+        height: 70px;
+        margin-top: -98px;
+    }
+
+    #activites{
+        width: fit-content;
+        margin-left: 0px;
+    }
+
+    .act{
+        width: 347px;
+        height: 212px;
+        border-radius: 20px;
+        box-sizing: border-box;
+        margin:  0px 30px 15px 0px;
+    }
+
+    .act-desc{
+        width: 332px;
+        height: 70px;
+        margin-top: -95px;
+    }
+
+    .t1, .t2, .t3, .t4, .t5{
+        width: 347px;
+        height: 212px;
+    }
+}
+
 /*--icons--*/
 .filtre-icon{
     position: absolute;
@@ -494,6 +574,12 @@ nav a:hover{
     margin-right: 20px;
     margin-top: 25px;
 }
+
+@media (max-width: 768px) {
+    .chart{
+        margin-left: 85px;
+    }
+}
 /*------------------*/
 
 /*--footer graphic parameters--*/
@@ -513,5 +599,13 @@ nav a:hover{
 footer p{
     margin-top: auto;
     margin-bottom: 12px;
+}
+
+@media (max-width: 768px){
+    .footer{
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+    }
 }
 /*---------------------------*/
