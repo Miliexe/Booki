@@ -355,9 +355,12 @@ nav a:hover{
 }
 /*--------------------*/
 
-@media (max-width: 768px){
+#reversable{
+    display: flex;
+}
+
+@media (max-width: 992px){
     #reversable{
-        display: flex;
         flex-direction: column-reverse;
         width: 100%;
     }
@@ -372,6 +375,7 @@ nav a:hover{
     flex-wrap: wrap;
     gap: 30px;
     padding-bottom: -30px;
+    justify-content: left;
 }
   
 .heb{
@@ -441,11 +445,19 @@ nav a:hover{
     height: 100%;
     border-radius: 15px;
 }
+
+@media (max-width: 992px) {
+    #populaires{          
+        flex-direction: row;
+        max-width: none;
+    }
+}
+
 /*------------------------------*/
 
 /*--"Activités à Marseille" section's parameters--*/
 #activites{
-    width: 1350px;
+    width: 100%;
     max-height: 520px;
     display: flex;
     flex-direction: column; 
@@ -454,9 +466,9 @@ nav a:hover{
     margin-bottom: 60px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1494px) {
     #activites{          
-        max-height: none;
+        max-height: 1000px;
     }
 }
 
@@ -528,13 +540,18 @@ nav a:hover{
         margin-top: -98px;
     }
 
+    #populaires{
+        flex-direction: column;
+    }
+
     #activites{
         width: fit-content;
+        max-height: none;
         margin-left: 0px;
     }
 
     .act{
-        width: 347px;
+        width: 332px;
         height: 212px;
         border-radius: 20px;
         box-sizing: border-box;
@@ -542,13 +559,13 @@ nav a:hover{
     }
 
     .act-desc{
-        width: 332px;
+        width: 317px;
         height: 70px;
         margin-top: -95px;
     }
 
     .t1, .t2, .t3, .t4, .t5{
-        width: 347px;
+        width: 332px;
         height: 212px;
     }
 }
