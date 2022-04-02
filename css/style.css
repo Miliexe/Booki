@@ -646,6 +646,7 @@ footer p{
     .footer{
         flex-direction: column;
         height: fit-content;
+        min-width: 450px;
     }
 }
 /*---------------------------*/
