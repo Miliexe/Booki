@@ -12,10 +12,16 @@ body{
 }
 
 main{
-    max-width: 1460px;
+    min-width: 1460px;
 	padding:20px;
     margin: auto;
     margin-left: 40px;
+}
+
+@media (max-width: 992px){
+    main{
+        min-width: 992px;
+    }
 }
 
 @media (max-width: 768px){
@@ -104,8 +110,13 @@ li{
 .nav{
     position: absolute;
     margin-top: -48px;
-    right: 0;
-    margin-right: 13.7%;
+    margin-left: 1100px;
+}
+
+@media (max-width: 992px){
+    .nav{
+        margin-left: 680px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -113,6 +124,7 @@ li{
         position: relative;
         justify-content: center;
         margin-right: 0px;
+        margin-left: 0px;
     }
 }
 
@@ -515,16 +527,36 @@ section{
     height: 179px;
 }
 /*------------------------------*/
-@media (max-width: 1494px) {
-    #activites{          
-        max-height: 1000px;
-    }
-}
-
 @media (max-width: 992px) {
     #populaires{          
         flex-direction: row;
         max-width: none;
+    }
+
+    #activites{
+        max-height: 700px;
+        width: fit-content;
+        margin-left: 0px;
+        gap: 15px;
+    }
+
+    .act{
+        width: 290px;
+        height: 212px;
+        border-radius: 20px;
+        box-sizing: border-box;
+        margin:  0px 30px 15px 0px;
+    }
+
+    .act-desc{
+        width: 275px;
+        height: 70px;
+        margin-top: -95px;
+    }
+
+    .t1, .t2, .t3, .t4, .t5{
+        width: 290px;
+        height: 212px;
     }
 }
 @media (max-width: 768px){
@@ -550,9 +582,8 @@ section{
     }
 
     #activites{
-        width: fit-content;
         max-height: none;
-        margin-left: 0px;
+        width: fit-content;
     }
 
     .act{
@@ -628,7 +659,7 @@ section{
     background-color: #F2F2F2;
     height: 200px;
     width: 100%;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px -20px -35px;
     display: flex;
 }
 
