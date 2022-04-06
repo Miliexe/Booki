@@ -12,17 +12,25 @@ body{
 }
 
 main{
-    max-width: 1460px;
-	padding:20px;
+    width: 95%;
+	padding: 20px 0px;
     margin: auto;
-    margin-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main div{
+    margin-left: 30px;
 }
 
 @media (max-width: 768px){
     main{
-        margin-left: 0px;
-        padding: 20px 0px;
-        min-width: 450px;
+        width: 100%;
+        padding: 0px;
+    }
+
+    main div{
+        margin: auto;
     }
 }
 
@@ -76,12 +84,18 @@ li{
 
 /*--Header parameters--*/
 #header{
+    width: 95%;
     display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+    padding-top: 20px;
+    margin: auto;
 }
 
 @media (max-width: 768px) {
     #header{
-        margin-left: 0px;
+        width: 100%;
         flex-direction: column;
         justify-content: center;
     }
@@ -90,6 +104,7 @@ li{
 
 .logo{
     width: 110px;
+    padding-left: 40px;
 }
 
 @media (max-width: 768px) {
@@ -102,10 +117,7 @@ li{
 
 /*--nav parameters--*/
 .nav{
-    position: absolute;
     margin-top: -48px;
-    right: 0;
-    margin-right: 13.7%;
 }
 
 @media (max-width: 768px) {
@@ -118,6 +130,7 @@ li{
 
 nav ul{
     margin: auto;
+    display: flex;
 }
 
 @media (max-width: 768px) {
@@ -135,15 +148,18 @@ nav li{
     nav li{
         width: 100%;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
     }
 
     nav a{
         border-bottom: 4px solid #F2F2F2;
         padding-bottom: 10px;
-        padding-right: 50%;
-        padding-left: 50%;
-        margin-left: -50%;
-        margin-right: -48%;
+        margin: -2px -30px -30px -30px;
+        padding: 15px 30px 30px 30px;
     }
 }
 
@@ -157,15 +173,19 @@ nav a:hover{
 @media (max-width: 768px) {
     nav a:hover{
         border-top: none;
+        padding-top: 15px;
         padding-bottom: 10px;
         border-bottom: 4px solid #0065FC;
-        padding-right: 50%;
-        padding-left: 50%;
-        margin-left: -50%;
-        margin-right: -48%;
     }
 }
 /*------------------*/
+
+@media (max-width: 768px){
+    .menu{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
 
 /*--Form parameters--*/
 form{
@@ -193,6 +213,7 @@ form i{
     color: #000;
     font-weight: 700;
     font-size: 16px;
+    opacity: 1;
 }
 
 .no-outline:focus{
@@ -367,13 +388,6 @@ section{
     }
 }
 /*-------------*/
-
-@media (max-width: 768px){
-    .phone{
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-}
 
 /*--"Hébergements à Marseille" section's parameters--*/
 #hebergements{
