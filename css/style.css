@@ -13,7 +13,7 @@ body{
 }
 
 main{
-    width: 95%;
+    width: 100%;
 	padding: 20px 0px;
     margin: auto;
     display: flex;
@@ -21,17 +21,17 @@ main{
 }
 
 main div{
-    margin-left: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 @media (max-width: 768px){
     main{
-        width: 100%;
+        width: 95%;
         padding: 0px;
     }
 
     main div{
-        width: 88%;
         margin: auto;
     }
 }
@@ -237,7 +237,7 @@ form button{
 
 @media (max-width: 768px){
     form{
-        width: 95%;
+        width: 100%;
     }
 
     form button{
@@ -271,6 +271,8 @@ form button{
     flex-direction: row; 
     flex-wrap: wrap;
     margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 #filtres p{
@@ -282,13 +284,14 @@ form button{
 #filtres div{
     display: block;
     margin-right: 10px;
+    margin-left: 10px;
     margin-top: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .filtre{
     width: fit-content;
-    padding: 12px 20px 12px 60px;
+    padding: 12px 15px 12px 55px;
     border: 2px solid #F2F2F2;
     border-radius: 45px;
 }
@@ -298,9 +301,18 @@ form button{
         height: fit-content;
     }
 
+    #filtres div{
+        margin-right: 10px;
+        margin-left: 0px;
+    }
+
     #filtres p{
         margin-right: 100%;
         margin-bottom: 15px;
+    }
+
+    .filtre{
+        font-size: 16px;
     }
 }
 
@@ -630,6 +642,11 @@ section{
 }
 
 @media (max-width: 768px) {
+    .filtre-icon{
+        height: 16px;
+        margin-top: -12px;
+    }
+
     .chart{
         margin-left: 85px;
     }
