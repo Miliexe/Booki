@@ -5,7 +5,7 @@ html {
   }
 
 body{
-    max-width: 1510px;
+    max-width: 1440px;
     min-width: 334px;
     margin: auto;
     font-family: 'Raleway', sans-serif;
@@ -20,7 +20,8 @@ main{
     flex-wrap: wrap;
 }
 
-main div{
+#main{
+    width: 100%;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -86,7 +87,7 @@ li{
 
 /*--Header parameters--*/
 #header{
-    width: 95%;
+    width: 100%;
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -120,6 +121,7 @@ li{
 /*--nav parameters--*/
 .nav{
     margin-top: -48px;
+    margin-right: 20px;
 }
 
 @media (max-width: 768px) {
@@ -323,6 +325,7 @@ form button{
 
 #reversable{
     display: flex;
+    width: 100%;
 }
 
 @media (max-width: 992px){
@@ -337,16 +340,27 @@ section{
     width: fit-content;
     border-radius: 20px;
     margin: 15px 30px 15px 0px;
-    padding: 10px 10px 10px 30px;
-    float: left;
+    padding: 10px 0px 10px 30px;
+}
+
+#phone-sec{
+    width: 100%;
 }
 
 .sec1{
-    background-color: #F2F2F2;
+    background-color: #DDD;
+    width: 70%;
+}
+
+.sec1 article{
+    width: 29%;
+    margin-bottom: 3%;
 }
 
 .sec2{
-    background-color: #F2F2F2;
+    background-color: #DDD;
+    width: 30%;
+    margin-right: 0px;
 }
 
 .sec3{
@@ -402,17 +416,16 @@ section{
 
 /*--"Hébergements à Marseille" section's parameters--*/
 #hebergements{
-    width: fit-content;
-    max-width: 920px;
+    width: 103%;
     display: flex;
     flex-direction: row; 
     flex-wrap: wrap;
-    gap: 30px;
-    justify-content: left;
+    justify-content:space-evenly;
+    margin-left: -3.5%;
 }
   
 .heb{
-    width: 280px;
+    width: 100%;
     height: 200px;
     border: 6px solid #FFFFFF;
     border-radius: 20px;
@@ -420,22 +433,27 @@ section{
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
-.heb-desc{
-    background-color: #FFFFFF;
-    width: 265px;
-    height: 70px;
-    margin-top: -80px;
-    border-radius: 0px 0px 20px 20px;
-    padding: 5px 0px 5px 15px;
-    position: absolute;
-    z-index: 0;
-}
-
 .heb img{
     object-fit: cover;
     width: 100%;
-    height: 62%;
+    height: 60%;
     border-radius: 15px 15px 0px 0px;
+}
+
+.heb-desc{
+    background-color: #FFFFFF;
+    width: 97%;
+    height: 40%;
+    border-radius: 0px 0px 20px 20px;
+    padding: 14px 5px 5px 9px;
+    margin-top: -16px;
+    margin-left: -3px;
+}
+
+.heb-desc .bold16{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 /*------------------------------*/
 
@@ -451,7 +469,7 @@ section{
 }
   
 .pop{
-    width: 335px;
+    width: 100%;
     height: 143px;
     border: 6px solid #FFFFFF;
     border-radius: 20px;
