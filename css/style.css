@@ -5,17 +5,25 @@ html {
   }
 
 body{
-    max-width: 1510px;
+    max-width: 1440px;
+    min-width: 334px;
     margin: auto;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
 }
 
 main{
-    min-width: 1460px;
-	padding:20px;
+    width: 100%;
+	  padding-top: 20px;
     margin: auto;
-    margin-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#main{
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 @media (max-width: 992px){
@@ -26,15 +34,18 @@ main{
 
 @media (max-width: 768px){
     main{
-        margin-left: 0px;
-        padding: 20px 0px;
-        min-width: 450px;
+        width: 95%;
+        padding: 0px;
+    }
+
+    main div{
+        margin: auto;
     }
 }
 
 h1{
     font-weight: 700;
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 25px;
 }
 
@@ -82,12 +93,18 @@ li{
 
 /*--Header parameters--*/
 #header{
+    width: 100%;
     display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+    padding-top: 20px;
+    margin: auto;
 }
 
 @media (max-width: 768px) {
     #header{
-        margin-left: 0px;
+        width: 100%;
         flex-direction: column;
         justify-content: center;
     }
@@ -96,6 +113,7 @@ li{
 
 .logo{
     width: 110px;
+    padding-left: 40px;
 }
 
 @media (max-width: 768px) {
@@ -108,15 +126,8 @@ li{
 
 /*--nav parameters--*/
 .nav{
-    position: absolute;
     margin-top: -48px;
-    margin-left: 1100px;
-}
-
-@media (max-width: 992px){
-    .nav{
-        margin-left: 680px;
-    }
+    margin-right: 20px;
 }
 
 @media (max-width: 768px) {
@@ -130,6 +141,7 @@ li{
 
 nav ul{
     margin: auto;
+    display: flex;
 }
 
 @media (max-width: 768px) {
@@ -143,22 +155,6 @@ nav li{
     padding: 30px 30px 30px 30px;
 }
 
-@media (max-width: 768px){
-    nav li{
-        width: 100%;
-        text-align: center;
-    }
-
-    nav a{
-        border-bottom: 4px solid #F2F2F2;
-        padding-bottom: 10px;
-        padding-right: 50%;
-        padding-left: 50%;
-        margin-left: -50%;
-        margin-right: -48%;
-    }
-}
-
 nav a:hover{
     border-top: 4px solid #0065FC;
     margin: -2px -30px -30px -30px;
@@ -166,24 +162,43 @@ nav a:hover{
     color: #0065FC;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
+    nav li{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    nav a{
+        border-bottom: 4px solid #F2F2F2;
+        padding-bottom: 10px;
+        margin: -2px -30px -30px -30px;
+        padding: 15px 30px 15px 30px;
+    }
+
     nav a:hover{
         border-top: none;
-        padding-bottom: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
         border-bottom: 4px solid #0065FC;
-        padding-right: 50%;
-        padding-left: 50%;
-        margin-left: -50%;
-        margin-right: -48%;
     }
 }
 /*------------------*/
+@media (max-width: 768px){
+    .menu{
+        padding: 10px;
+    }
+}
 
 /*--Form parameters--*/
 form{
     width: fit-content;
-    background-color: #F2F2F2;
     border-radius: 12px;
+    display: flex;
 }
 
 input[type=search]{
@@ -197,14 +212,17 @@ input[type=search]{
 }
 
 form i{
-    margin: 0px 13px 0px 18px;
+    background-color: #F2F2F2;
+    padding: 13px 18px 10px 18px;
     font-size: 18px;
+    border-radius: 12px 0px 0px 12px;
 }
 
 ::placeholder{
     color: #000;
     font-weight: 700;
     font-size: 16px;
+    opacity: 1;
 }
 
 .no-outline:focus{
@@ -217,7 +235,7 @@ form button{
     height: 45px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: -5px;
+    margin-left: -10px;
     border: none;
     border-radius: 0px 12px 12px 0px;
     font-weight: 700;
@@ -228,17 +246,16 @@ form button{
 
 @media (max-width: 768px){
     form{
-        width: 90%;
+        width: 100%;
     }
 
     form button{
-        position: absolute;
         width: 45px;
         border-radius: 12px;
     }
 
     input[type=search]{
-        width: 80%;
+        width: 95%;
     }
 
     .search {
@@ -263,6 +280,8 @@ form button{
     flex-direction: row; 
     flex-wrap: wrap;
     margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 #filtres p{
@@ -274,13 +293,14 @@ form button{
 #filtres div{
     display: block;
     margin-right: 10px;
+    margin-left: 10px;
     margin-top: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .filtre{
     width: fit-content;
-    padding: 12px 20px 12px 60px;
+    padding: 12px 15px 12px 55px;
     border: 2px solid #F2F2F2;
     border-radius: 45px;
 }
@@ -290,9 +310,18 @@ form button{
         height: fit-content;
     }
 
+    #filtres div{
+        margin-right: 10px;
+        margin-left: 0px;
+    }
+
     #filtres p{
         margin-right: 100%;
         margin-bottom: 15px;
+    }
+
+    .filtre{
+        font-size: 16px;
     }
 }
 
@@ -303,6 +332,7 @@ form button{
 
 #reversable{
     display: flex;
+    width: 100%;
 }
 
 @media (max-width: 992px){
@@ -314,27 +344,76 @@ form button{
 
 /*--section graphic parameters--*/
 section{
-    width: fit-content;
     border-radius: 20px;
-    margin: 15px 30px 15px 0px;
-    padding: 10px 10px 10px 30px;
-    float: left;
+    margin: 15px 30px 35px 0px;
+    padding-left: 3%;
+    padding-bottom: 15px;
+}
+
+#phone-sec{
+    width: 100%;
 }
 
 .sec1{
-    background-color: #F2F2F2;
+    background-color: #DDD;
+    width: 70%;
+}
+
+.sec1 article{
+    width: 29%;
+    margin-bottom: 3%;
 }
 
 .sec2{
-    background-color: #F2F2F2;
+    background-color: #DDD;
+    width: 27%;
+    margin-right: 0px;
+    padding-right: 2.7%;
+    padding-left: 2.6%;
 }
 
 .sec3{
     padding-left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sec3 article{
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .sec1{
+        width: 93.5%;
+        padding-right: 35px;
+    }
+
+    .sec1 article{
+        width: 30%;
+        margin-left: auto;
+        margin-bottom: 3%;
+    }
+
+    .sec2{
+        width: 95%;
+    }
+
+    .sec2 article{
+        width: 46%;
+        margin-left: 12px;
+    }
+
+    .sec3{
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 722px;
+        gap: 35px;
+    }
 }
 
 @media (max-width: 768px) {
-
     #phone-sec{
         width: 99.6%;
         max-width: 768px;
@@ -380,56 +459,52 @@ section{
 }
 /*-------------*/
 
-@media (max-width: 768px){
-    .phone{
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-}
-
 /*--"Hébergements à Marseille" section's parameters--*/
 #hebergements{
-    width: fit-content;
-    max-width: 920px;
+    width: 103%;
     display: flex;
     flex-direction: row; 
     flex-wrap: wrap;
-    gap: 30px;
-    justify-content: left;
+    justify-content:space-evenly;
+    margin-left: -3.8%;
 }
   
 .heb{
-    width: 280px;
+    width: 100%;
     height: 200px;
     border: 6px solid #FFFFFF;
     border-radius: 20px;
     box-sizing: border-box;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
-}
-
-.heb-desc{
-    background-color: #FFFFFF;
-    width: 265px;
-    height: 70px;
-    margin-top: -80px;
-    border-radius: 0px 0px 20px 20px;
-    padding: 5px 0px 5px 15px;
-    position: absolute;
-    z-index: 0;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .heb img{
     object-fit: cover;
     width: 100%;
-    height: 62%;
+    height: 60%;
     border-radius: 15px 15px 0px 0px;
+}
+
+.heb-desc{
+    background-color: #FFFFFF;
+    width: 97%;
+    height: 40%;
+    border-radius: 0px 0px 20px 20px;
+    padding: 14px 5px 5px 9px;
+    margin-top: -16px;
+    margin-left: -3px;
+}
+
+.heb-desc .bold16{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 /*------------------------------*/
 
 /*--"Les plus populaires" section's parameters--*/
 #populaires{
-    width: fit-content;
-    max-width: 355px;
+    width: 100%;
     display: flex;
     flex-direction: column; 
     flex-wrap: wrap;
@@ -438,93 +513,98 @@ section{
 }
   
 .pop{
-    width: 335px;
+    width: 100%;
     height: 143px;
     border: 6px solid #FFFFFF;
     border-radius: 20px;
     box-sizing: border-box;
     margin:  0px 30px 15px 0px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
-}
-
-.pop-desc{
-    background-color: #FFFFFF;
-    width: 180px;
-    height: 130px;
-    margin-left: 135px;
-    margin-top: -155px;
-    border-radius: 0px 20px 20px 0px;
-    padding: 5px 0px 5px 15px;
-    position: absolute;
-    z-index: 0;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .pop img{
     object-fit: cover;
-    width: 50%;
+    width: 40%;
     height: 100%;
-    border-radius: 15px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.pop-desc{
+    background-color: #FFFFFF;
+    width: 55%;
+    height: 130px;
+    margin-left: 40%;
+    margin-top: -140px;
+    border-radius: 0px 20px 20px 0px;
+    padding: 5px 10px;
+}
+
+.pop-stars{
+    margin-top: -25px;
+    margin-left: 40%;
+    padding-left: 15px;
 }
 /*------------------------------*/
 
 /*--"Activités à Marseille" section's parameters--*/
-#activites{
-    width: 100%;
-    max-height: 520px;
+.activites{
+    width: 23%;
     display: flex;
     flex-direction: column; 
     flex-wrap: wrap;
-    gap: 42px;
-    margin-bottom: 60px;
 }
 
 .act{
-    background-size: cover;
-    background-position: center;
     border-radius: 20px;
     box-sizing: border-box;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
-}
-
-.act-desc{
-    background-color: #FFFFFF;
-    width: 300px;
-    height: 50px;
-    margin-top: -60px;
-    border-radius: 0px 0px 20px 20px;
-    padding: 5px 0px 5px 15px;
-    position: absolute;
-    z-index: 0;
-}
-
-.act-desc h2{
-    margin-top: 18px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .act img{
     object-fit: cover;
     border-radius: 20px;
+    width: 100%;
+}
+
+.act-desc{
+    background-color: #FFFFFF;
+    width: auto;
+    height: 40px;
+    margin-top: -50px;
+    border-radius: 0px 0px 20px 20px;
+    padding: 5px 0px 5px 15px;
+    position: relative;
+    z-index: 0;
+}
+
+.act-desc h2{
+    margin-top: 12px;
+}
+
+.act-desc .bold16{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .t1{
-    width: 315px;
-    height: 468px;
+    height: 430px;
 }
 .t2{
-    width: 315px;
-    height: 243px;
+    height: 250px;
 }
 .t3{
-    width: 315px;
-    height: 226px;
+    height: 170px;
 }
 .t4{ 
-    width: 315px;
-    height: 196px;
+    height: 220px;
 }
 .t5{
-    width: 315px;
-    height: 179px;
+    height: 140px;
+}
+
+.mb35{
+    margin-bottom: 35px;
 }
 /*------------------------------*/
 @media (max-width: 992px) {
@@ -533,32 +613,17 @@ section{
         max-width: none;
     }
 
-    #activites{
-        max-height: 700px;
-        width: fit-content;
-        margin-left: 0px;
-        gap: 15px;
-    }
 
-    .act{
-        width: 290px;
-        height: 212px;
-        border-radius: 20px;
-        box-sizing: border-box;
-        margin:  0px 30px 15px 0px;
-    }
-
-    .act-desc{
-        width: 275px;
-        height: 70px;
-        margin-top: -95px;
+    .activites{
+        width: auto;
+        height: fit-content;
     }
 
     .t1, .t2, .t3, .t4, .t5{
-        width: 290px;
         height: 212px;
     }
 }
+
 @media (max-width: 768px){
     #hebergements{
         flex-direction: column;
@@ -640,14 +705,19 @@ section{
 }
 
 .chart{
-    font-size: 25px;
+    font-size: 22px;
     position: relative;
     margin-left: auto;
-    margin-right: 20px;
-    margin-top: 25px;
+    margin-right: 0px;
+    margin-top: 20px;
 }
 
 @media (max-width: 768px) {
+    .filtre-icon{
+        height: 16px;
+        margin-top: -12px;
+    }
+
     .chart{
         margin-left: 85px;
     }
@@ -664,7 +734,7 @@ section{
 }
 
 .footer div{
-    margin: 40px 30px 30px 80px;
+    margin: 40px 30px 30px 20px;
     width: 33%;
 }
 
