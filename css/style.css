@@ -14,7 +14,7 @@ body{
 
 main{
     width: 100%;
-	padding-top: 20px;
+	  padding-top: 20px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -24,6 +24,12 @@ main{
     width: 100%;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+@media (max-width: 992px){
+    main{
+        min-width: 992px;
+    }
 }
 
 @media (max-width: 768px){
@@ -129,6 +135,7 @@ li{
         position: relative;
         justify-content: center;
         margin-right: 0px;
+        margin-left: 0px;
     }
 }
 
@@ -606,6 +613,7 @@ section{
         max-width: none;
     }
 
+
     .activites{
         width: auto;
         height: fit-content;
@@ -614,8 +622,8 @@ section{
     .t1, .t2, .t3, .t4, .t5{
         height: 212px;
     }
-
 }
+
 @media (max-width: 768px){
     #hebergements{
         flex-direction: column;
@@ -639,9 +647,8 @@ section{
     }
 
     #activites{
-        width: fit-content;
         max-height: none;
-        margin-left: 0px;
+        width: fit-content;
     }
 
     .act{
@@ -722,7 +729,7 @@ section{
     background-color: #F2F2F2;
     height: 200px;
     width: 100%;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px -20px -35px;
     display: flex;
 }
 
