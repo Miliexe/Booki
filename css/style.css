@@ -14,7 +14,7 @@ body{
 
 main{
     width: 100%;
-	padding: 20px 0px;
+	padding-top: 20px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -337,9 +337,8 @@ form button{
 
 /*--section graphic parameters--*/
 section{
-    width: fit-content;
     border-radius: 20px;
-    margin: 15px 30px 15px 0px;
+    margin: 15px 30px 35px 0px;
     padding-left: 3%;
     padding-bottom: 15px;
 }
@@ -370,17 +369,44 @@ section{
     padding-left: 0px;
     width: 100%;
     display: flex;
-    flex-direction: row ;
+    flex-direction: row;
     justify-content: space-between;
 }
 
 .sec3 article{
     width: 100%;
-    margin-bottom: 35px;
+}
+
+@media (max-width: 992px) {
+    .sec1{
+        width: 93.5%;
+        padding-right: 35px;
+    }
+
+    .sec1 article{
+        width: 30%;
+        margin-left: auto;
+        margin-bottom: 3%;
+    }
+
+    .sec2{
+        width: 95%;
+    }
+
+    .sec2 article{
+        width: 46%;
+        margin-left: 12px;
+    }
+
+    .sec3{
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 722px;
+        gap: 35px;
+    }
 }
 
 @media (max-width: 768px) {
-
     #phone-sec{
         width: 99.6%;
         max-width: 768px;
@@ -442,7 +468,7 @@ section{
     border: 6px solid #FFFFFF;
     border-radius: 20px;
     box-sizing: border-box;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .heb img{
@@ -486,7 +512,7 @@ section{
     border-radius: 20px;
     box-sizing: border-box;
     margin:  0px 30px 15px 0px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .pop img{
@@ -519,13 +545,12 @@ section{
     display: flex;
     flex-direction: column; 
     flex-wrap: wrap;
-    margin-bottom: 60px;
 }
 
 .act{
     border-radius: 20px;
     box-sizing: border-box;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .act img{
@@ -570,12 +595,26 @@ section{
 .t5{
     height: 140px;
 }
+
+.mb35{
+    margin-bottom: 35px;
+}
 /*------------------------------*/
 @media (max-width: 992px) {
     #populaires{          
         flex-direction: row;
         max-width: none;
     }
+
+    .activites{
+        width: auto;
+        height: fit-content;
+    }
+
+    .t1, .t2, .t3, .t4, .t5{
+        height: 212px;
+    }
+
 }
 @media (max-width: 768px){
     #hebergements{
@@ -688,7 +727,7 @@ section{
 }
 
 .footer div{
-    margin: 40px 30px 30px 80px;
+    margin: 40px 30px 30px 20px;
     width: 33%;
 }
 
