@@ -722,9 +722,12 @@ section{
 .footer {
     background-color: #F2F2F2;
     height: 200px;
-    width: 100%;
+    width: 99%;
     margin: 0px 0px 0px 0px;
+    padding-left: 1%;
     display: flex;
+    white-space: nowrap;
+    overflow: visible;
 }
 
 .footer div{
@@ -741,6 +744,8 @@ footer p{
     .footer{
         flex-direction: column;
         height: fit-content;
+        width: 94%;
+        padding-left: 6%;
     }
 }
 /*---------------------------*/
