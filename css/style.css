@@ -344,7 +344,7 @@ section{
 }
 
 .sec1{
-    background-color: #DDD;
+    background-color: #F2F2F2;
     width: 70%;
 }
 
@@ -354,7 +354,7 @@ section{
 }
 
 .sec2{
-    background-color: #DDD;
+    background-color: #F2F2F2;
     width: 27%;
     margin-right: 0px;
     padding-right: 2.7%;
@@ -413,6 +413,7 @@ section{
     .sec1{
         background-color: #FFFFFF;
         padding: 0px;
+        margin-bottom: 40px;
     }
 
     .sec1 article{
@@ -423,7 +424,7 @@ section{
 
     .sec2{
         border-radius: 0;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
     .sec2 article{
@@ -433,7 +434,14 @@ section{
     }
 
     .sec3{
-        padding-left: 30px;
+        height: fit-content;
+        margin-bottom: 40px;
+        margin-left: 15px;
+        padding-left: 0px;
+    }
+
+    .sec3 article{
+        width: 100%;
     }
 }
 /*-------------*/
@@ -528,9 +536,9 @@ section{
     display: none;
     left: 0;
     position: absolute;
-    background-color: gainsboro;
+    background-color: #F2F2F2;
     width: 100%;
-    height: 592px;
+    height: 580px;
     z-index: -1;
 }
 /*------------------------------*/
@@ -637,28 +645,26 @@ section{
         display: block;
     }
 
-    #activites{
-        width: fit-content;
+    .activites{ 
         max-height: none;
-        margin-left: 0px;
+        margin: 0px;
+        padding-right: 35px;
     }
 
     .act{
-        width: 332px;
-        height: 212px;
+        height: 200px;
         border-radius: 20px;
         box-sizing: border-box;
-        margin:  0px 30px 15px 0px;
+        box-shadow: 0px 13px 6px rgba(0, 0, 0, 0.5);
     }
 
     .act-desc{
-        width: 317px;
-        height: 70px;
-        margin-top: -95px;
+        width: auto;
+        margin-top: -38px;
     }
 
     .t1, .t2, .t3, .t4, .t5{
-        width: 332px;
+        width: 100%;
         height: 212px;
     }
 }
