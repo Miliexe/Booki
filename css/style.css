@@ -343,10 +343,6 @@ section{
     padding-bottom: 15px;
 }
 
-#phone-sec{
-    width: 100%;
-}
-
 .sec1{
     background-color: #DDD;
     width: 70%;
@@ -406,17 +402,7 @@ section{
     }
 }
 
-@media (max-width: 768px) {
-    #phone-sec{
-        width: 99.6%;
-        max-width: 768px;
-        display: flex;
-        flex-direction: row; 
-        flex-wrap: wrap;
-        gap: 30px;
-        justify-content: center;
-    }
-
+@media (max-width: 768px){
     section{
         margin: auto;
         margin-top: 5px;
@@ -433,21 +419,13 @@ section{
         border-radius: 0;
     }
 
+    .sec2 article{
+        width: 100%;
+        margin: auto;
+    }
+
     .sec3{
         padding-left: 30px;
-    }
-
-    #pop-phone{
-        display: flex;
-        width: 100%;
-        background-color: #F2F2F2;
-        margin: auto;
-    }
-
-    #act-phone{
-        display: flex;
-        width: 100%;
-        margin: auto;
     }
 }
 /*-------------*/
@@ -480,7 +458,7 @@ section{
 
 .heb-desc{
     background-color: #FFFFFF;
-    width: 97%;
+    width: auto;
     height: 40%;
     border-radius: 0px 0px 20px 20px;
     padding: 14px 5px 5px 9px;
@@ -524,7 +502,7 @@ section{
 
 .pop-desc{
     background-color: #FFFFFF;
-    width: 55%;
+    width: auto;
     height: 130px;
     margin-left: 40%;
     margin-top: -140px;
@@ -536,6 +514,16 @@ section{
     margin-top: -25px;
     margin-left: 40%;
     padding-left: 15px;
+}
+
+.bgphone{
+    display: none;
+    left: 0;
+    position: absolute;
+    background-color: gainsboro;
+    width: 100%;
+    height: 592px;
+    z-index: -1;
 }
 /*------------------------------*/
 
@@ -638,6 +626,10 @@ section{
         flex-direction: column;
     }
 
+    .bgphone{
+        display: block;
+    }
+
     #activites{
         width: fit-content;
         max-height: none;
@@ -710,10 +702,6 @@ section{
         height: 16px;
         margin-top: -12px;
     }
-
-    .chart{
-        margin-left: 85px;
-    }
 }
 /*------------------*/
 
@@ -740,7 +728,6 @@ footer p{
     .footer{
         flex-direction: column;
         height: fit-content;
-        min-width: 450px;
     }
 }
 /*---------------------------*/
