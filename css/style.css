@@ -343,12 +343,8 @@ section{
     padding-bottom: 15px;
 }
 
-#phone-sec{
-    width: 100%;
-}
-
 .sec1{
-    background-color: #DDD;
+    background-color: #F2F2F2;
     width: 70%;
 }
 
@@ -358,7 +354,7 @@ section{
 }
 
 .sec2{
-    background-color: #DDD;
+    background-color: #F2F2F2;
     width: 27%;
     margin-right: 0px;
     padding-right: 2.7%;
@@ -406,17 +402,7 @@ section{
     }
 }
 
-@media (max-width: 768px) {
-    #phone-sec{
-        width: 99.6%;
-        max-width: 768px;
-        display: flex;
-        flex-direction: row; 
-        flex-wrap: wrap;
-        gap: 30px;
-        justify-content: center;
-    }
-
+@media (max-width: 768px){
     section{
         margin: auto;
         margin-top: 5px;
@@ -426,28 +412,40 @@ section{
 
     .sec1{
         background-color: #FFFFFF;
-        padding-right: 35px;
+        padding: 0px;
+        margin-bottom: 40px;
+    }
+
+    .sec1 article{
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 10px;
     }
 
     .sec2{
         border-radius: 0;
+        margin-bottom: 40px;
+    }
+
+    .sec2 article{
+        width: 100%;
+        margin: auto;
+        margin-bottom: -10px;
     }
 
     .sec3{
-        padding-left: 30px;
+        height: fit-content;
+        margin-bottom: 40px;
+        margin-left: 10px;
+        padding-left: 0px;
     }
 
-    #pop-phone{
-        display: flex;
-        width: 100%;
-        background-color: #F2F2F2;
-        margin: auto;
+    .title3{
+        padding-left: 12px;
     }
 
-    #act-phone{
-        display: flex;
+    .sec3 article{
         width: 100%;
-        margin: auto;
     }
 }
 /*-------------*/
@@ -524,7 +522,7 @@ section{
 
 .pop-desc{
     background-color: #FFFFFF;
-    width: 55%;
+    width: auto;
     height: 130px;
     margin-left: 40%;
     margin-top: -140px;
@@ -536,6 +534,16 @@ section{
     margin-top: -25px;
     margin-left: 40%;
     padding-left: 15px;
+}
+
+.bgphone{
+    display: none;
+    left: 0;
+    position: absolute;
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 580px;
+    z-index: -1;
 }
 /*------------------------------*/
 
@@ -619,47 +627,48 @@ section{
 @media (max-width: 768px){
     #hebergements{
         flex-direction: column;
+        width: 100%;
     }
     .heb{
-        width: 335px;
-        height: 200px;
+        width: 100%;
         border: 6px solid #FFFFFF;
         border-radius: 20px;
         box-sizing: border-box;
     }
 
     .heb-desc{
-        width: 320px;
-        height: 70px;
-        margin-top: -98px;
+        width: auto;
+        margin-top: -17px;
     }
 
     #populaires{
         flex-direction: column;
     }
 
-    #activites{
-        width: fit-content;
+    .bgphone{
+        display: block;
+    }
+
+    .activites{ 
         max-height: none;
-        margin-left: 0px;
+        margin: 0px;
+        padding-right: 20px;
     }
 
     .act{
-        width: 332px;
-        height: 212px;
+        height: 200px;
         border-radius: 20px;
         box-sizing: border-box;
-        margin:  0px 30px 15px 0px;
+        box-shadow: 0px 13px 6px rgba(0, 0, 0, 0.5);
     }
 
     .act-desc{
-        width: 317px;
-        height: 70px;
-        margin-top: -95px;
+        width: auto;
+        margin-top: -38px;
     }
 
     .t1, .t2, .t3, .t4, .t5{
-        width: 332px;
+        width: 100%;
         height: 212px;
     }
 }
@@ -710,10 +719,6 @@ section{
         height: 16px;
         margin-top: -12px;
     }
-
-    .chart{
-        margin-left: 85px;
-    }
 }
 /*------------------*/
 
@@ -721,9 +726,12 @@ section{
 .footer {
     background-color: #F2F2F2;
     height: 200px;
-    width: 100%;
+    width: 99%;
     margin: 0px 0px 0px 0px;
+    padding-left: 1%;
     display: flex;
+    white-space: nowrap;
+    overflow: visible;
 }
 
 .footer div{
@@ -740,7 +748,8 @@ footer p{
     .footer{
         flex-direction: column;
         height: fit-content;
-        min-width: 450px;
+        width: 94%;
+        padding-left: 6%;
     }
 }
 /*---------------------------*/
