@@ -37,7 +37,7 @@ main{
     }
 }
 
-h1{
+.title{
     font-weight: 700;
     font-size: 22px;
     margin-bottom: 25px;
@@ -338,12 +338,12 @@ form button{
 /*--section graphic parameters--*/
 section{
     border-radius: 20px;
-    margin: 15px 30px 35px 0px;
-    padding-left: 3%;
     padding-bottom: 15px;
 }
 
 .sec1{
+    margin: 15px 30px 35px 0px;
+    padding-left: 3%;
     background-color: #F2F2F2;
     width: 70%;
 }
@@ -354,6 +354,8 @@ section{
 }
 
 .sec2{
+    margin: 15px 30px 35px 0px;
+    padding-left: 3%;
     background-color: #F2F2F2;
     width: 27%;
     margin-right: 0px;
@@ -362,6 +364,7 @@ section{
 }
 
 .sec3{
+    margin-bottom: 35px;
     padding-left: 0px;
     width: 100%;
     display: flex;
@@ -389,6 +392,10 @@ section{
         width: 95%;
     }
 
+    .title2{
+        padding-left: 12px;
+    }
+
     .sec2 article{
         width: 46%;
         margin-left: 12px;
@@ -407,7 +414,7 @@ section{
         margin: auto;
         margin-top: 5px;
         margin-bottom: 5px;
-        padding-left: 20px;
+        padding-left: 0px;
     }
 
     .sec1{
@@ -441,7 +448,7 @@ section{
         height: fit-content;
         margin-bottom: 40px;
         margin-left: 10px;
-        padding-left: 0px;
+        padding: 0px;
     }
 
     .title3{
@@ -718,10 +725,20 @@ section{
     margin-top: 20px;
 }
 
+@media (max-width: 992px){
+    .chart{
+        margin-right: 4%;
+    }
+}
+
 @media (max-width: 768px) {
     .filtre-icon{
         height: 16px;
         margin-top: -12px;
+    }
+
+    .chart{
+        margin-right: 0%;
     }
 }
 /*------------------*/
