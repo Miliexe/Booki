@@ -37,7 +37,7 @@ main{
     }
 }
 
-h1{
+.title{
     font-weight: 700;
     font-size: 22px;
     margin-bottom: 25px;
@@ -338,12 +338,12 @@ form button{
 /*--section graphic parameters--*/
 section{
     border-radius: 20px;
-    margin: 15px 30px 35px 0px;
-    padding-left: 3%;
     padding-bottom: 15px;
 }
 
 .sec1{
+    margin: 15px 30px 35px 0px;
+    padding-left: 3%;
     background-color: #F2F2F2;
     width: 70%;
 }
@@ -354,6 +354,8 @@ section{
 }
 
 .sec2{
+    margin: 15px 30px 35px 0px;
+    padding-left: 3%;
     background-color: #F2F2F2;
     width: 27%;
     margin-right: 0px;
@@ -362,6 +364,7 @@ section{
 }
 
 .sec3{
+    margin-bottom: 35px;
     padding-left: 0px;
     width: 100%;
     display: flex;
@@ -400,6 +403,10 @@ section{
         height: 722px;
         gap: 35px;
     }
+
+    .tab_padl12{
+        padding-left: 12px;
+    }
 }
 
 @media (max-width: 768px){
@@ -407,7 +414,7 @@ section{
         margin: auto;
         margin-top: 5px;
         margin-bottom: 5px;
-        padding-left: 20px;
+        padding-left: 0px;
     }
 
     .sec1{
@@ -419,33 +426,37 @@ section{
     .sec1 article{
         width: 100%;
         margin-bottom: 20px;
-        margin-left: 10px;
+        margin-left: 0px;
     }
 
     .sec2{
+        width: 93.5%;
         border-radius: 0;
+        padding: 0px;
+        margin: 0px;
         margin-bottom: 40px;
     }
 
     .sec2 article{
         width: 100%;
-        margin: auto;
+        margin-left: 10px;
         margin-bottom: -10px;
     }
 
     .sec3{
+        width: 93.5%;
         height: fit-content;
         margin-bottom: 40px;
         margin-left: 10px;
-        padding-left: 0px;
-    }
-
-    .title3{
-        padding-left: 12px;
+        padding: 0px;
     }
 
     .sec3 article{
         width: 100%;
+    }
+
+    .phone_padl12{
+        padding-left: 12px;
     }
 }
 /*-------------*/
@@ -527,13 +538,13 @@ section{
     margin-left: 40%;
     margin-top: -140px;
     border-radius: 0px 20px 20px 0px;
-    padding: 5px 10px;
+    padding: 5px 4px 5px 8px;
 }
 
 .pop-stars{
     margin-top: -25px;
     margin-left: 40%;
-    padding-left: 15px;
+    padding-left: 8px;
 }
 
 .bgphone{
@@ -628,6 +639,7 @@ section{
     #hebergements{
         flex-direction: column;
         width: 100%;
+        margin-left: 12px;
     }
     .heb{
         width: 100%;
@@ -652,7 +664,7 @@ section{
     .activites{ 
         max-height: none;
         margin: 0px;
-        padding-right: 20px;
+        padding-right: 0px;
     }
 
     .act{
@@ -714,10 +726,20 @@ section{
     margin-top: 20px;
 }
 
+@media (max-width: 992px){
+    .chart{
+        margin-right: 4%;
+    }
+}
+
 @media (max-width: 768px) {
     .filtre-icon{
         height: 16px;
         margin-top: -12px;
+    }
+
+    .chart{
+        margin-right: 0%;
     }
 }
 /*------------------*/
