@@ -392,10 +392,6 @@ section{
         width: 95%;
     }
 
-    .title2{
-        padding-left: 12px;
-    }
-
     .sec2 article{
         width: 46%;
         margin-left: 12px;
@@ -406,6 +402,10 @@ section{
         flex-wrap: wrap;
         height: 722px;
         gap: 35px;
+    }
+
+    .tab_padl12{
+        padding-left: 12px;
     }
 }
 
@@ -426,7 +426,7 @@ section{
     .sec1 article{
         width: 100%;
         margin-bottom: 20px;
-        margin-left: 10px;
+        margin-left: 0px;
     }
 
     .sec2{
@@ -451,12 +451,12 @@ section{
         padding: 0px;
     }
 
-    .title3{
-        padding-left: 12px;
-    }
-
     .sec3 article{
         width: 100%;
+    }
+
+    .phone_padl12{
+        padding-left: 12px;
     }
 }
 /*-------------*/
@@ -639,6 +639,7 @@ section{
     #hebergements{
         flex-direction: column;
         width: 100%;
+        margin-left: 12px;
     }
     .heb{
         width: 100%;
