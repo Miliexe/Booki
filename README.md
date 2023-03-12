@@ -6,7 +6,7 @@
 
 
 
-## Compétences évaluée:
+## Compétences évaluées:
 
  
  - Implémenter une interface responsive.
